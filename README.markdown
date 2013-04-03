@@ -16,6 +16,11 @@ or Wget:
 
 <sub>The script clones the Nvm repository to `~/.nvm` and adds the source line to your profile (`~/.bash_profile` or `~/.profile`).</sub>
 
+To install to a specified profile file, or to install a version:
+
+    bash <(curl -s https://raw.github.com/creationix/nvm/master/install.sh) ~/.my_profile
+    bash <(curl -s https://raw.github.com/creationix/nvm/master/install.sh) v0.8.22
+    bash <(curl -s https://raw.github.com/creationix/nvm/master/install.sh) ~/.my_profile v0.8.22
 
 ### Manual install
 

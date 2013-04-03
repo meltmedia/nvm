@@ -59,8 +59,10 @@ else
   echo "=> Source string already in $PROFILE"
 fi
 
-if [ -z "$VERSION" ]; then
+if [ ! -z "$VERSION" ]; then
   echo "=> Installing $VERSION as default"
   nvm install $VERSION
   nvm alias default $VERSION
 fi
+
+echo "=> Close and reopen your terminal to start using NVM"
