@@ -231,6 +231,7 @@ nvm()
           binavail=
           # binaries started with node 0.8.6
           case "$VERSION" in
+            v0.8.[0-9]{2}) binavail=1 ;; # check for double digit in the 0.8.Y (v0.8.22)
             v0.8.[012345]) binavail=0 ;;
             v0.[1234567].*) binavail=0 ;;
             *) binavail=1 ;;
